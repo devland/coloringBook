@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "JosefinSansRegular";
+  src: url("fonts/JosefinSans-Regular.ttf")  format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JosefinSansLight";
+  src: url("fonts/JosefinSans-Light.ttf")  format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: repeat;
+  background-image: url("images/paper.jpg");
+  font-family: "JosefinSansLight";
+  white-space: nowrap;
+}
+body > .container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+.story {
+  width: 900vw;
+  height: 100vh;
+  background-image: url("images/river.png");
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: auto 27vh;
+}
+.story > div {
+  position: absolute;
+}
+.title {
+  position: absolute;
+  height: 10vh;
+  left: 90vh;
+  top: 6vh;
+}
+.description {
+  font-size: 4.35vh;
+  top: 17vh;
+  left: 90vh;
+}
+.girl {
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.bubble {
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+  font-size: 0;
+}
+.bubble .container {
+  position: relative;
+}
+.bubble .hover {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.bubble .text {
+  position: absolute;
+  font-family: "JosefinSansRegular";
+  font-size: 1.5vh;
+  opacity: 0;
+  pointer-events: none;
+}
+.bubble .hover:hover {
+  opacity: 1;
+}
+.bubble .hover:hover ~ .text {
+  opacity: 1;
+}
+.bubble1 {
+  left: 99.86vh;
+  top: 24.6vh;
+}
+.bubble1 .container .image {
+  height: 38.2vh;
+}
+.bubble1 .container .text {
+  top: 9.5vh;
+  left: 32vh;
+}
+.bubble1 .container .startHere {
+  position: absolute;
+  top: 28vh;
+  left: 22vh;
+  font-family: "JosefinSansRegular";
+  font-size: 1.5vh;
+}
+.bubble1 .container .startHere img {
+  height: 10vh;
+}
+.bubble1 .container .startHere div {
+  position: relative;
+  top: 1vh;
+  left: -1vh;
+}
+.bubble2 {
+  left: 169vh;
+  top: 22vh;
+}
+.bubble2 .container .image {
+  height: 38.2vh;
+}
+.bubble2 .container .text {
+  top: 19vh;
+  left: 16vh;
+}
