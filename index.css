@@ -53,7 +53,6 @@ body > .container {
 }
 .bubble {
   cursor: pointer;
-  transition: opacity 0.25s ease;
   font-size: 0;
 }
 .bubble .container {
@@ -64,6 +63,7 @@ body > .container {
   opacity: 0;
   top: 0;
   left: 0;
+  transition: opacity 0.25s ease;
 }
 .bubble .text {
   position: absolute;
@@ -71,6 +71,7 @@ body > .container {
   font-size: 1.5vh;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.25s ease;
 }
 .bubble .hover:hover {
   opacity: 1;
